@@ -1,59 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>T&E</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>T.E (a)mar é uma dádiva</title>
+
+  <!-- RESPONSIVO -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FONTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Arial:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- INTRO -->
-<div id="intro">
-  <h1>(a)mar</h1>
-</div>
+  <!-- INTRO / BANNER -->
+  <section class="intro">
+    <h1 class="intro-title">T.E (a)mar é uma dádiva</h1>
 
-<!-- MÚSICA -->
-<audio id="bgMusic" loop>
-  <source src="musica.mp3" type="audio/mpeg">
-</audio>
+    <p class="intro-subtitle">
+      Uma história vivida entre risos, cuidado e amor verdadeiro.
+    </p>
 
-<button id="musicBtn">🎵 Música</button>
+    <button id="assistirBtn" class="btn-principal">
+      ▶ Assistir
+    </button>
+  </section>
 
-<!-- CINEMA -->
-<section class="cinema">
-  <h2>Sinopse</h2>
-  <p class="O segredo e a dádiva">
-    sabe um segredo que não é mais segredo? o tanto que tenho medo de acordar e não te ter mais em minha vida me assusta.
-    É como se fosse uma paralisia do sono onde meu maior pesadelo é ter que te ver partir e eu não puder fazer nada.
-    Freddy Krueger nunca foi tão pequeno kkkk. O que seria uma dádiva? em termos técnicos "Dádiva significa um presente, 
-    uma oferta voluntaria, um dom natural..." mas digamos que pra mim, dádiva, é poder ser cuidado por você, ser amado por
-    você, poder escutar o quão displicente sou por esquecer de avisar ao sair kkkkk ou até mesmo quando choro de felicidade
-    ao te ver. Dádiva é poder viver ao seu lado, poder te tocar, te sentir e poder te amar que nem louco. E disso eu entendo
-    bem! te amo, tá?!
-  </p>
+  <!-- SINOPSE -->
+  <section class="sinopse">
+    <h2>Sinopse</h2>
+    <p>
+      Sabe um segredo que não é mais segredo?  
+      O tanto que tenho medo de acordar e não te ter mais em minha vida me assusta.
+      É como se fosse uma paralisia do sono onde meu maior pesadelo é te ver partir
+      e eu não poder fazer absolutamente nada. Freddy Krueger nunca foi tão pequeno kkkk.
+      <br><br>
+      O que seria uma dádiva? Em termos técnicos, dádiva significa um presente,
+      um dom natural. Mas pra mim, dádiva é poder ser cuidado por você, ser amado
+      por você, ouvir quando me chama atenção por eu esquecer de avisar que saí,
+      ou chorar de felicidade ao te ver.
+      <br><br>
+      Dádiva é viver ao seu lado, te tocar, te sentir e te amar que nem louco.
+      Disso eu entendo bem. Te amo, tá?!
+    </p>
+  </section>
 
-  <button id="assistirBtn">▶ Assistir</button>
+  <!-- GALERIA -->
+  <section class="galeria">
+    <img src="momento1.jpg" alt="Momento especial 1">
+    <img src="momento2.png" alt="Momento especial 2">
+    <img src="momento3.png" alt="Momento especial 3">
 
+    <img src="IMG_1598.jpg" alt="Momento especial 4">
+    <img src="IMG_1601.jpg" alt="Momento especial 5">
+    <img src="IMG_1602.jpg" alt="Momento especial 6">
+  </section>
+
+  <!-- PLAYER DE VÍDEO (OCULTO) -->
   <div id="videoContainer">
-    <video id="video" controls>
+    <video id="video" playsinline>
       <source src="video.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
     </video>
   </div>
-</section>
 
-<!-- GALERIA -->
-<section class="galeria">
-  <img src="momento1.jpg">
-  <img src="momento2.png">
-  <img src="momento3.png">
-  <img src="IMG_1598.jpg">
-  <img src="IMG_1601.jpg">
-  <img src="IMG_1602.jpg">
-</section>
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 
-<script src="script.js"></script>
 </body>
 </html>
-
-
